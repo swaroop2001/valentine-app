@@ -340,7 +340,7 @@ function App() {
                         You are my home, my happiness, my favorite forever story. In a lifetime of moments, you are the ones I want to remember forever.
                       </p>
                       <p>
-                        Today, I want to ask you something that my heart has been screaming since the day we met…
+                        Today, I want to ask you something and every year after this…
                       </p>
                     </div>
 
@@ -440,7 +440,7 @@ function App() {
               }}
             >
               <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }}>
-                <Heart size={80} style={{ color: "var(--accent-mid)", marginBottom: "30px" }} fill="currentColor" />
+                <Heart size={60} style={{ color: "var(--accent-mid)", marginBottom: "15px" }} fill="currentColor" />
               </motion.div>
               
               <motion.h1
