@@ -231,10 +231,7 @@ html {
 .title {
   font-size: 3.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--accent-mid), var(--accent-pastel));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-mid);
   margin-bottom: 15px;
   letter-spacing: -1px;
 }
@@ -364,10 +361,14 @@ html {
 }
 
 .proposal-question {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   color: var(--accent-mid);
-  margin-bottom: 22px;
+  margin-bottom: 28px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .proposal-message {
@@ -375,6 +376,17 @@ html {
   color: var(--text-muted);
   overflow: hidden;
   font-style: italic;
+  margin-bottom: 24px;
+}
+
+.proposal-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .proposal-buttons {
@@ -479,11 +491,14 @@ html {
   border: 1px solid rgba(var(--shadow-rgb), 0.14);
   padding: 12px 30px;
   font-size: 1.02rem;
+  transition: transform 0.2s ease-out, background 0.3s ease, border-color 0.3s ease;
+  position: absolute;
 }
 
 .btn-no:hover {
-  background: rgba(255,255,255,0.06);
-  border-color: rgba(var(--shadow-rgb), 0.22);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(var(--shadow-rgb), 0.28);
+  cursor: pointer;
 }
 
 .btn-restart {
@@ -554,8 +569,7 @@ html {
 
 /* Button focus for accessibility */
 .btn:focus-visible {
-  outline: 3px solid rgba(var(--shadow-rgb), 0.18);
-  outline-offset: 4px;
+  outline: none;
 }
 
 /* Subtle image hover / focus interaction */
