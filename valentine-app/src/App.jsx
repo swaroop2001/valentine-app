@@ -52,11 +52,11 @@ function App() {
   const noBtnRef = useRef(null);
 
   const memories = [
-    { img: "/image1.jpg" },
-    { img: "/image2.jpg" },
-    { img: "/image3.jpg"},
-    { img: "/image4.jpg"},
-    { img: "/image5.jpg" },
+    { img: "/valentine-app/image1.jpg" },
+    { img: "/valentine-app/image2.jpg" },
+    { img: "/valentine-app/image3.jpg"},
+    { img: "/valentine-app/image4.jpg"},
+    { img: "/valentine-app/image5.jpg" },
   ];
 
   const messages = [
@@ -114,7 +114,7 @@ function App() {
 
   // Initialize audio
   useEffect(() => {
-    const audio = new Audio("/love-music.mp3");
+    const audio = new Audio("/valentine-app/love-music.mp3");
     audio.loop = true;
     audio.volume = 0.3;
     audioRef.current = audio;
@@ -480,7 +480,7 @@ function App() {
                 transition={{ delay: 1 }}
               >
                 <img
-                  src="/image6.PNG"
+                  src="/valentine-app/image6.PNG"
                   alt="Our special moment"
                   className="celebration-image"
                 />
