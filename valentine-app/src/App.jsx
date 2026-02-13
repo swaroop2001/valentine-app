@@ -47,7 +47,6 @@ function App() {
   const [noClicks, setNoClicks] = useState(0);
   const [currentImage, setCurrentImage] = useState(0);
   const canvasRef = useRef(null);
-  const audioRef = useRef(null);
   const proposalRef = useRef(null);
   const noBtnRef = useRef(null);
 
@@ -114,20 +113,7 @@ function App() {
 
   // Initialize audio
   useEffect(() => {
-    const audio = new Audio("/valentine-app/love-music.mp3");
-    audio.loop = true;
-    audio.volume = 0.3;
-    audioRef.current = audio;
-
-    const playAudio = () => {
-      audio.play().catch(() => console.log("Audio autoplay blocked"));
-      document.removeEventListener("click", playAudio);
-    };
-    document.addEventListener("click", playAudio);
-
-    return () => {
-      document.removeEventListener("click", playAudio);
-    };
+    // Audio removed - no longer needed
   }, []);
 
   // Auto-advance slideshow
